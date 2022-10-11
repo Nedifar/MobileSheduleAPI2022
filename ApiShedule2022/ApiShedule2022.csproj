@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="22.8.0" />
+    <PackageReference Include="ClosedXML" Version="0.96.0" />
+    <PackageReference Include="FreeSpire.XLS" Version="12.7.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.45" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/public/fonts/oensans/stylesheet.css" rel="stylesheet">
+	<link href="/public/fonts/oswald/stylesheet.css" rel="stylesheet">
+	<!-- <meta name="yandex-verification" content="02274db0c48856c8" /> -->
+     <!-- Yandex.Metrika counter --> 
+     <!-- <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(89281804, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/89281804" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  -->
+     <!-- /Yandex.Metrika counter -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="icon" href="/public/img/favicon.ico" type="image/x-icon">
+    <script src="/public/scripts/jquery.js"></script>
+    <title>ГАПОУ "Оренбургский колледж экономики и информатики</title>
+	
+	<meta name="description" content="Государственное автономное профессиональное образовательное учреждение «‎Оренбургский колледж экономики и информатики»‎ ждет всех желающих. Наш адрес: 460001, Оренбургская область, г. Оренбург, ул. Чкалова, д. 11"> 
+   
+</head>
+<link rel="stylesheet" href="/public/styles/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/public/styles/main.css?v=1">
+<body>
+<noscript>
+    Please enable cookies and javascript to access this site
+</noscript>
+    <div class="visually_impaired">
+        <a href="/poor_eyesight">
+            <i class="far fa-eye" aria-hidden="true" style="margin-right: 10px"></i><span>Версия для слабовидящих</span>
+        </a>
+    </div>
+<header>
+    <p class="open_menu navbar-toggler" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="/" class="nav-icon">
+            <img src="/public/img/logo.png" width="50" alt="">
+            <span class="oswald" style="top: -8px;position: relative;color: #fff">ОКЭИ</span>
+        </a>
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path
+                class="line middle"
+                d="m 30,50 h 40" />
+            <path
+                class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul style="margin-top: 60px">
+                    <li><i class="fas fa-mobile"></i> +7 (3532) 31-72-39</li>
+                    <li><i class="fas fa-envelope"></i> spo08@mail.orb.ru</li>
+                    <li><i class="fas fa-mobile"></i> +7 (3532) 31-16-26</li>
+                    <li><i class="fas fa-envelope"></i> pk@oksei.ru - приёмная комиссия </li> 
+                </ul>
+            </div>
+            <div class="header-logo col-lg-4">
+                <a href="/">
+                    <img src="/public/img/logo.png" width="160" alt="">
+                    <br>
+                    <span class="oswald">Оренбургский колледж экономики и информатики</span>
+                </a>
+            </div>
+            <div class="header-menu_secondary col-lg-4">
+                <div class="header-links_secondary">
+                    <span><a href="/#about_us">О нас</a></span>
+                    <span><a href="/page/kontakty">Контакты</a></span>
+                    <form action="/search" method="get">
+                        <input name="q" type="text" placeholder="Поиск">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="navbarToggleExternalContent" class="header-menu container collapse">
+    <div class="row">
+        <div class="header-menu_items col-lg-11">
+            <ul class="menu_items-list">
+                <li><a href=/page/kontakty>Контакты</a></li><li>
+                                <p>
+                                    <a>Абитуриенту <i class="fas fa-chevron-down"></i></a> 
+                                </p><ul class="drop_down_menu"><li class="drop_down_list"><a href=/abiturientu/pravila_priema class="drop_down_href" title=Правила приёма><span class="menu-title">Правила приёма</span></a></li><li class="drop_down_list"><a href=/abiturientu/prijom_po_spetsialnostyam class="drop_down_href" title=Приём по специальностям в 2022 году><span class="menu-title">Приём по специальностям в 2022 году</span></a></li><li class="drop_down_list"><a href=/abiturientu/perechen_spetsialnostei class="drop_down_href" title=Общая характеристика специальностей><span class="menu-title">Общая характеристика специальностей</span></a></li><li class="drop_down_list"><a href=/abiturientu/regim_raboti class="drop_down_href" title=Приёмная комиссия><span class="menu-title">Приёмная комиссия</span></a></li><li class="drop_down_list"><a href=/abiturientu/kollichestvo_podannih_zayavleniy class="drop_down_href" title=Количество поданных заявлений / Приказ о зачислении первокурсников 2022 года><span class="menu-title">Количество поданных заявлений / Приказ о зачислении первокурсников 2022 года</span></a></li><li class="drop_down_list"><a href=/abiturientu/pou_dogovor class="drop_down_href" title=Условия приема на обучение по договорам об оказании платных образовательных услуг><span class="menu-title">Условия приема на обучение по договорам об оказании платных образовательных услуг</span></a></li><li class="drop_down_list"><a href=/page/vstupitelnye_ispytaniya class="drop_down_href" title=Вступительные испытания><span class="menu-title">Вступительные испытания</span></a></li><li class="drop_down_list"><a href=/page/osobennosti_provedeniya_vstupitelnyh_ispytaniy__dlya_invalidov_i_lic_s_ovz class="drop_down_href" title=Особенности проведения вступительных испытаний  для инвалидов и лиц с ОВЗ><span class="menu-title">Особенности проведения вступительных испытаний  для инвалидов и лиц с ОВЗ</span></a></li><li class="drop_down_list"><a href=/abiturientu/ob_obschezhitii class="drop_down_href" title=Об общежитии><span class="menu-title">Об общежитии</span></a></li><li class="drop_down_list"><a href=/abiturientu/help_abiturient class="drop_down_href" title=Ответы на вопросы по приёму><span class="menu-title">Ответы на вопросы по приёму</span></a></li><li class="drop_down_list"><a href=/page/proekty_i_dpo class="drop_down_href" title=Интересные проекты и дополнительные образовательные программы><span class="menu-title">Интересные проекты и дополнительные образовательные программы</span></a></li><li class="drop_down_list"><a href=https://youtu.be/FYSB-mVIpG4 class="drop_down_href" title=Виртуальная экскурсия по рубрике Абитуриенту><span class="menu-title">Виртуальная экскурсия по рубрике Абитуриенту</span></a></li></ul>
+                            </li><li>
+                                <p>
+                                    <a>Студенту <i class="fas fa-chevron-down"></i></a> 
+                                </p><ul class="drop_down_menu"><li class="drop_down_list"><a href=/studentu/raspisanie_uchebnykh_zanyatij  class="drop_down_href" title=Расписание учебных занятий><span class="menu-title">Расписание учебных занятий</span></a></li><li class="drop_down_list"><a href=/studentu/obratnaya_svyaz  class="drop_down_href" title=Заказ справок on-line><span class="menu-title">Заказ справок on-line</span></a></li><li class="drop_down_list"><a href=/studentu/proizvodstvennaya_praktika  class="drop_down_href" title=Производственная практика><span class="menu-title">Производственная практика</span></a></li><li class="drop_down_list"><a href=/page/obscheobrazovatelnyy_process  class="drop_down_href" title=Общеобразовательный цикл><span class="menu-title">Общеобразовательный цикл</span></a></li><li class="drop_down_list"><a href=/files/Pamyatka_stud_brs_.docx  class="drop_down_href" title=Памятка студенту по БРС><span class="menu-title">Памятка студенту по БРС</span></a></li><li class="drop_down_list"><a href=/page/telefony_doveriya  class="drop_down_href" title=Телефон доверия><span class="menu-title">Телефон доверия</span></a></li></ul>
+                            </li><ul class="drop_down_menu"></ul>
+                            </li><li><a href=/page/abilimpiks>Абилимпикс</a></li><li><a href=/page/WorldSkills>WorldSkills</a></li><li><a href=/page/fp_young_professionals_all>ФП «Молодые профессионалы»</a></li><li><a href=/page/promezhutochnaya_attestaciya>Промежуточная аттестация</a></li><li><a href=/page/gia>ГИА</a></li><li><a href=/page/bilet_v_buduschee>Билет в будущее</a></li><li><a href=http://itcube56.oksei.ru/>Центр цифрового образования "IT-Куб"</a></li><li><a href=/page/stud_olymp>Студенческий клуб "Олимп"</a></li>            </ul>
+        </div>
+        <div class="header-social_links col-lg-1">
+            <ul>
+                <li><a target="_blank" href="https://vk.com/gapou_okei"><i class="fab fa-vk"></i></a></li>
+				<li><a target="_blank" href="https://t.me/okei_56ru"><i class="fab fa-telegram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="/public/scripts/main.js"></script>
+
+<link rel="stylesheet" href="/public/styles/slick.css">
+<script src="/public/scripts/slick.min.js"></script>
+<link rel="stylesheet" href="/public/styles/index.css">
+<link rel="stylesheet" href="/public/styles/style.css?v=1">
+
+<div class="container" style="position: relative">
+    <div class="main-slider">
+                                                            <div class="slide">
+                    <div class="slide-content" style="background-image: url('/public/img/news/8697166f778d37fd4ca7980f32e4aa8f.jpg')">
+                        <div class="slide-title">
+                            <p class="slider-title_name oswald">
+                                 В Оренбургском колледже экономики и информатики прошла торжественная линейка, посвящённая Дню знаний                            </p>
+                            <p class="slider-title_desc">
+                                В 2022 году Оренбургский колледж экономики и информатики стал самой креативной обр...                            </p>
+                            <a href="/news/item/217" class="slider-more">Подробнее <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                                                <div class="slide">
+                    <div class="slide-content" style="background-image: url('/public/img/news/ae4dd8bbbe4719c6bb1a8b76a1b6f62e.jpg')">
+                        <div class="slide-title">
+                            <p class="slider-title_name oswald">
+                                 Представители ГАПОУ «ОКЭИ» побывали на Тюльганском электромеханическом заводе.                            </p>
+                            <p class="slider-title_desc">
+                                Профильный вид деятельности ТЭМЗ &ndash; производство электрооборудования и ветроэ...                            </p>
+                            <a href="/news/item/211" class="slider-more">Подробнее <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                                                <div class="slide">
+                    <div class="slide-content" style="background-image: url('/public/img/news/2f21582142af1468cc620eac898ffad8.jpg')">
+                        <div class="slide-title">
+                            <p class="slider-title_name oswald">
+                                 C 03.06.22 по  05.06.22 проводился Хакатон в колледже "ОКЭИ" от Цифрового прорыва.                            </p>
+                            <p class="slider-title_desc">
+                                &nbsp;
+
+C 03.06.22 по&nbsp; 05.06.22 проводился Хакатон в колледже &quot;ОКЭИ&qu...                            </p>
+                            <a href="/news/item/209" class="slider-more">Подробнее <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+            <div style="" class="slide-arrow">
+            <div class="slider-arrows next fas fa-chevron-right"></div>
+            <div class="slider-arrows prev fas fa-chevron-left"></div>
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 primary-content " id="about_us">
+            <div class="college-description bg-white box-shadow-right p-25 radius">
+                <h2>О ГАПОУ "Оренбургский колледж экономики и информатики"</h2>
+
+                <p>
+                    Оренбургский колледж экономики и информатики является одним из ведущих средних профессиональных образовательных учреждений  области. Это подтверждается высоким уровнем подготовки специалистов и их востребованностью на рынке труда. Интерес к учебному заведению объясняется еще и спектром специальностей, по которым ведется подготовка специалистов. Они отвечают всем современным требованиям и позволяют студентам получать богатый объем знаний и умений по профессии.
+                </p>
+                <p>
+                    Коллектив колледжа ставит основной целью создание образовательно-воспитательной среды, способствующей формированию и обучению высококвалифицированных специалистов в сфере СПО, способных, с одной стороны, к реализации полученных знаний в практической деятельности, а с другой – к приобретению и расширению полученных знаний, умеющих ориентироваться и адаптироваться в условиях рыночной экономики.
+                </p>
+            </div>
+            <div class="news bg-white mt-4 p-25 box-shadow-right radius">
+                <h2 class="title">Новости</h2>
+                <div class="news-list">
+
+                                            <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                                                            <img src="/public/img/news/282bd3a943ab57fda0d28c1285bc4280.small.jpg"
+                                         title="
+                                            30 августа в Правительстве Оренбургской области" class="news_item-image" 
+                                            alt="
+                                                30 августа в Правительстве Оренбургской области">
+                                                                    </div>
+                                <div class="col-md-9">
+                                    <h3 class="news_item-title "><span><a href="/news/item/218">
+                                         30 августа в Правительстве Оренбургской области                                            
+                                        </a></span></h3>
+                                    <p class="news_item-content">
+                                                                                30 августа в Правительстве Оренбургской области состоялась церемонии подписания Соглашений о партнерстве в целях создания и развития образовательно-производственных центров (кластеров) машиностроительной, металлургической, горнодобывающей                                    </p>
+                                    <p class="news_item-date">02.09.2022</p>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                                                            <img src="/public/img/news/8697166f778d37fd4ca7980f32e4aa8f.small.jpg"
+                                         title="
+                                            В Оренбургском колледже экономики и информатики прошла торжественная линейка, посвящённая Дню знаний" class="news_item-image" 
+                                            alt="
+                                                В Оренбургском колледже экономики и информатики прошла торжественная линейка, посвящённая Дню знаний">
+                                                                    </div>
+                                <div class="col-md-9">
+                                    <h3 class="news_item-title "><span><a href="/news/item/217">
+                                         В Оренбургском колледже экономики и информатики прошла торжественная линейка, посвящённая Дню знаний                                            
+                                        </a></span></h3>
+                                    <p class="news_item-content">
+                                                                                В 2022 году Оренбургский колледж экономики и информатики стал самой креативной образовательной организацией региона. Впервые порог колледжа переступили дизайнеры, специалисты по рекламе, аниматоры и специалисты по звукооператорскому                                    </p>
+                                    <p class="news_item-date">01.09.2022</p>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                                                            <img src="/public/img/news/3c4fe7a7f5c96b472a14af3eea54f07d.small.png"
+                                         title="
+                                            Информация по организации 2022-2023 учебного года в ГАПОУ «ОКЭИ»" class="news_item-image" 
+                                            alt="
+                                                Информация по организации 2022-2023 учебного года в ГАПОУ «ОКЭИ»">
+                                                                    </div>
+                                <div class="col-md-9">
+                                    <h3 class="news_item-title "><span><a href="/news/item/216">
+                                         Информация по организации 2022-2023 учебного года в ГАПОУ «ОКЭИ»                                            
+                                        </a></span></h3>
+                                    <p class="news_item-content">
+                                                                                30.08.2022-01.09.2022
+
+&nbsp;
+
+
+	С 10:00 часов&nbsp;&ndash; заселение в общежитие
+
+
+&nbsp;
+
+01.09.2022
+
+&nbsp;
+
+
+	8:30-9:00 &ndash; сбор студентов нового набора (на спортивной площадке перед общежитием)
+	9:00-09:30 &ndash; Торжественная линейка
+	09.40-10:10 &ndash; Классный час с                                    </p>
+                                    <p class="news_item-date">22.08.2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="show-other">
+                        <a href="/news">Посмотреть все</a>
+                    </div>
+                </div>
+
+
+
+            <div class="gallary bg-white mt-4 p-25 box-shadow-right radius">
+                <h2>Наша галерея</h2>
+                <div style="text-align: center" class="row">
+                                            <a rel="gallery-1" href="/public/img/gallery/2222222.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/2222222.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/222222.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/222222.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/22222.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/22222.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/2222.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/2222.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/222.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/222.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/22.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/22.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/2.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/2.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/11111.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/11111.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/1111.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/1111.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/111.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/111.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/11.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/11.jpg" alt="image">
+                        </a>
+                                            <a rel="gallery-1" href="/public/img/gallery/1.jpg" class="swipebox col-md-3 col-sm-4 col-xs-12">
+                            <img src="/public/img/gallery/1.jpg" alt="image">
+                        </a>
+                    
+                </div>
+                <div class="show-other" style="margin-top: 30px; width: 100%;">
+                    <a href="/gallery">Посмотреть все</a>
+                </div>
+            </div>
+             </div>
+            <div style="padding: 30px; margin: 10px 0;">
+<script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> 
+<style>
+#js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff;cursor:pointer}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:240px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoWebRegular;src:url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Bold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:ScadaWebRegular;src:url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:ScadaWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Bold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:Geometria;src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.eot);src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.eot?#iefix) format("embedded-opentype"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Geometria-ExtraBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.eot);src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.eot?#iefix) format("embedded-opentype"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.ttf) format("truetype");font-weight:800;font-style:normal}
+</style>
+
+<style>
+#js-show-iframe-wrapper{background:var(--pos-banner-fluid-22__background)}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{width:100%;min-height:52px;background:#fff;color:#0b1f33;font-size:16px;font-family:LatoWeb,sans-serif;font-weight:400;padding:0;line-height:1.2}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active,#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus,#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#e4ecfd}#js-show-iframe-wrapper .bf-22{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-22__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-22__grid-template-rows);width:100%;max-width:var(--pos-banner-fluid-22__max-width);box-sizing:border-box;grid-auto-flow:row dense}#js-show-iframe-wrapper .bf-22__decor{background:var(--pos-banner-fluid-22__bg-url) var(--pos-banner-fluid-22__bg-url-position) no-repeat;background-size:cover;background-color:#f8efec;position:relative}#js-show-iframe-wrapper .bf-22__content{display:flex;flex-direction:column;padding:var(--pos-banner-fluid-22__content-padding);grid-row:var(--pos-banner-fluid-22__content-grid-row);justify-content:center}#js-show-iframe-wrapper .bf-22__text{margin:var(--pos-banner-fluid-22__text-margin);font-size:var(--pos-banner-fluid-22__text-font-size);line-height:1.4;font-family:LatoWeb,sans-serif;font-weight:700;color:#fff}#js-show-iframe-wrapper .bf-22__bottom-wrap{display:flex;flex-direction:row;align-items:center}#js-show-iframe-wrapper .bf-22__logo-wrap{position:absolute;top:var(--pos-banner-fluid-22__logo-wrap-top);left:var(--pos-banner-fluid-22__logo-wrap-right);padding:var(--pos-banner-fluid-22__logo-wrap-padding);background:#fff;border-radius:0 0 8px 0}#js-show-iframe-wrapper .bf-22__logo{width:var(--pos-banner-fluid-22__logo-width);margin-left:1px}#js-show-iframe-wrapper .bf-22__slogan{font-family:LatoWeb,sans-serif;font-weight:700;font-size:var(--pos-banner-fluid-22__slogan-font-size);line-height:1.2;color:#005ca9}#js-show-iframe-wrapper .bf-22__btn-wrap{width:100%;max-width:var(--pos-banner-fluid-22__button-wrap-max-width)}
+</style>
+<div id='js-show-iframe-wrapper'>
+  <div class='pos-banner-fluid bf-22'>
+
+    <div class='bf-22__decor'>
+      <div class='bf-22__logo-wrap'>
+        <img
+          class='bf-22__logo'
+          src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg'
+          alt='Госуслуги'
+        />
+        <div class='bf-22__slogan'>Решаем вместе</div >
+      </div >
+    </div >
+    <div class='bf-22__content'>
+      <div class='bf-22__text'>
+        Не убран мусор, яма на дороге, не горит фонарь?
+      </div >
+
+      <div class='bf-22__bottom-wrap'>
+        <div class='bf-22__btn-wrap'>
+          <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+          <button
+            class='pos-banner-btn_2'
+            type='button'
+          >Написать о проблеме
+          </button >
+        </div >
+      </div>
+    </div >
+
+  </div >
+</div >
+<script>
+
+(function(){
+  "use strict";function ownKeys(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);if(t)o=o.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});n.push.apply(n,o)}return n}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(n),true).forEach(function(t){_defineProperty(e,t,n[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(n));else ownKeys(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function _defineProperty(e,t,n){if(t in e)Object.defineProperty(e,t,{value:n,enumerable:true,configurable:true,writable:true});else e[t]=n;return e}var POS_PREFIX_22="--pos-banner-fluid-22__",posOptionsInitialBanner22={background:"linear-gradient(#2d73bc 26.49%,#38bafe 79.45%)","grid-template-columns":"100%","grid-template-rows":"262px auto","max-width":"100%","text-font-size":"20px","text-margin":"0 0 24px 0","button-wrap-max-width":"100%","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/18/banner-fluid-bg-18-2.svg')","bg-url-position":"right bottom","content-padding":"26px 24px 24px","content-grid-row":"0","logo-wrap-padding":"16px 12px 12px","logo-width":"65px","logo-wrap-top":"0","logo-wrap-left":"0","slogan-font-size":"12px"},setStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_22;Object.keys(e).forEach(function(o){t.style.setProperty(n+o,e[o])})},removeStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_22;Object.keys(e).forEach(function(e){t.style.removeProperty(n+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner22),n=document.getElementById("js-show-iframe-wrapper"),o=n?n.offsetWidth:document.body.offsetWidth;if(o>340)t["button-wrap-max-width"]="209px";if(o>482)t["content-padding"]="24px",t["text-font-size"]="24px";if(o>568)t["grid-template-columns"]="1fr 292px",t["grid-template-rows"]="100%",t["content-grid-row"]="1",t["content-padding"]="32px 24px",t["bg-url-position"]="calc(100% + 35px) bottom";if(o>610)t["bg-url-position"]="calc(100% + 12px) bottom";if(o>726)t["bg-url-position"]="right bottom";if(o>783)t["grid-template-columns"]="1fr 390px";if(o>820)t["grid-template-columns"]="1fr 420px",t["bg-url-position"]="right bottom";if(o>1098)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/18/banner-fluid-bg-18-3.svg')",t["bg-url-position"]="calc(100% + 55px) bottom",t["grid-template-columns"]="1fr 557px",t["text-font-size"]="32px",t["content-padding"]="32px 32px 32px 50px",t["logo-width"]="78px",t["slogan-font-size"]="15px",t["logo-wrap-padding"]="20px 16px 16px";if(o>1422)t["max-width"]="1422px",t["grid-template-columns"]="1fr 720px",t["content-padding"]="32px 48px 32px 160px",t.background="linear-gradient(90deg, #2d73bc 5.49%,#38bafe 59.45%, #f8efec 60%)";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner22);window.removeEventListener("resize",changePosBannerOnResize),removeStyles(t,e)};
+})()
+</script>
+ <script>Widget("https://pos.gosuslugi.ru/form", 240912)</script>
+ </div>
+        </div>
+        <div class="col-md-4 secondary-content" style="margin-top: 0">
+			<!-- IT-CUBE begin -->
+			<div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+				<a href="http://itcube56.oksei.ru/" target="_blank"><img src="/public/img/itcube.png" width="100%" /></a>
+			</div>
+			<!-- IT-CUBE end -->
+            <div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+                <a href="https://cmit.ru/orenburg/" target="_blank"><img src="/files/LOGO.png" width="100%" /></a>
+            </div>
+            <div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+                <a href="https://oksei.ru/page/hotline" target="_blank"><img src="https://oksei.ru/files/hotline.jpg" width="100%" /></a>
+            </div>
+            <div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+                <a href="https://oksei.ru/page/zpo_po" target="_blank"><img src="https://oksei.ru/files/banner zpopo.png" width="100%" /></a>
+            </div>
+            <div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+                <a href="https://oksei.ru/page/sertificats_vaccine" target="_blank"><img src="/files/Вакцинация 1.png" width="100%" /></a>
+            </div>
+
+             <div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+                <a href="https://uco.orb.ru/" target="_blank"><img src="/files/КО.png" width="100%" alt="Универсальная Карта оренбуржца"></a>
+            </div>
+            <div class="bg-white radius p-15 box-shadow-left mb-4" style="margin-bottom: 30px;">
+                <a href="https://rsv.ru/competitions/contests/" target="_blank"><img src="https://rsv.ru/_nuxt/1a7541fb91fa77ddf246ba335713fa09.svg" width="100%" alt="Конкурсы проф. мастерства"></a>
+            </div>
+
+
+            <div class="information bg-white radius p-15 box-shadow-left  ">
+                <h3>Сведения об образовательной организации</h3>
+                <ul class="information-menu">
+                    <li class="information-menu_item"><a href="/intelligence/basic_information">Основные сведения</a></li>
+                    <li class="information-menu_item"><a href="/intelligence/structure">Структура и органы управления образовательной организацией</a></li>
+                    <li class="information-menu_item"><a href="/intelligence/documents">Документы</a></li>
+                    <li class="information-menu_item no-line"><a href="/intelligence/education">Образование</a>
+                        <ul>
+                            <li class="information-menu_item_down" ><a href="/intelligence/education">Образовательные программы</a></li>
+                            <li class="information-menu_item_down" ><a href="../../files/Результаты перевода, восстановления и отчисления студентов.pdf" target="_blank">Контингент</a></li>
+                        </ul>
+                    </li>
+                    <li class="information-menu_item"><a href="/intelligence/obrz_standart">Образовательные стандарты</a></li>
+                    <li class="information-menu_item"><a href="/files/sotr.pdf">Руководство. Педагогический состав</a></li>
+                    <li class="information-menu_item no-line"><a href="/intelligence/logistics_and_equipment">Материально-техническое обеспечение и оснащенность образовательного процесса</a>
+                        <ul>
+                            <li class="information-menu_item_down"><a href="/intelligence/logistics_and_equipment">Материально-техническое обеспечение</a></li>
+                            <li class="information-menu_item_down"><a href="/intelligence/logistics_and_equipment">Оснащенность образовательного процесса</a></li>
+                        </ul>
+                    </li>
+                    <li class="information-menu_item"><a href="/intelligence/scholarships_and_other">Стипендии и иные виды материальной поддержки</a></li>
+                    <li class="information-menu_item"><a href="/intelligence/paid_educational_services">Платные образовательные услуги</a></li>
+                    <li class="information-menu_item"><a href="/intelligence/finansovo_hoz_deyatelnosy">Финансово-хозяйственная деятельность</a></li>
+                    <li class="information-menu_item"><a href="/intelligence/vacant_places_for_reception">Вакантные места для приема (перевода)</a></li>
+                    <li class="information-menu_item"><a href="/page/dostupnaya_sreda">Доступная среда</a></li>
+                    <li class="information-menu_item"><a href="/page/mezhdunarodnoe_sotrudnichestvo">Международное сотрудничество</a></li>
+                </ul>
+            </div>
+
+
+            <div class="specialty bg-white radius p-15 box-shadow-left mt-4">
+                <h3>Информация</h3>
+                <div class="slider-partners"></div>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+              <!--      <li><a href="/page/uchebni_center">Отделение дополнительного образования</a></li>-->
+                    <li><a href="/studentu/raspisanie_uchebnykh_zanyatij">Расписание учебных занятий</a></li>
+                    <li><a href="/page/otdelenie">Отделения</a></li>
+	<!-- <li><a href="/page/programma_razvitiya_gapou_okei">Программа развития</a></li> -->
+                    <li><a href="/abiturientu">Абитуриенту</a></li>
+                    <li><a href="/page/normi_gto">Нормы ГТО</a></li>
+                    <li><a href="/page/trudoustristvo">Трудоустройство</a></li>
+                    <li><a href="/page/our_achievements">Наши достижения</a></li>
+                    <li><a href="/page/map">Карта сайта</a></li>
+                    <li><a href="/page/kontakty">Контакты</a></li>
+                    <li><a href="/page/pay_online">Оплата услуг колледжа on-line</a></li>
+                                 <li><a href="/page/protivodeystvie_korrupcii">Противодействие коррупции</a></li>
+                                  <li><a href="https://bus.gov.ru/info-card/381828">Независимая оценка качества образования</a></li>
+                </ul>
+            </div>
+
+
+            <style>
+                .partner {
+                    display: inline-block;
+                }
+                .partner-arrow {
+                    position: absolute;
+                    right: 0;
+                    bottom: -37px;
+                    background-color: #00569d;
+                    color: #fff;
+                    padding: 10px;
+                    cursor: pointer;
+
+                }
+                .left-partner {
+                    right: 30px;
+                }
+            </style>
+            <div class="partners bg-white radius p-15 box-shadow-left mt-4 " style="position:relative;">
+                <!-- <h3>Наши партнеры</h3> -->
+                <h3>Ссылки на ресурсы</h3>
+                <div class="slider-partners" >
+                                            <div class="slide-partners">
+                                                            <a title="Электронная библиотека Book.ru" class="partner" target="_blank" href="http://www.book.ru">
+                                    <img title="Электронная библиотека Book.ru" src="/public/img/bookru.png" alt="">
+                                </a>
+                                                            <a title="Сайт с нуля" class="partner" target="_blank" href="http://сайт-с-нуля.рф">
+                                    <img title="Сайт с нуля" src="/public/img/sitebuilding.png" alt="">
+                                </a>
+                                                            <a title="It планета" class="partner" target="_blank" href="http://world-it-planet.org/">
+                                    <img title="It планета" src="/public/img/itplnt_logo_2.png" alt="">
+                                </a>
+                                                            <a title="Cisco" class="partner" target="_blank" href="http://www.netacad.com/web/ru">
+                                    <img title="Cisco" src="/public/img/cisco_logo.png" alt="">
+                                </a>
+                                                            <a title="Гос услуги" class="partner" target="_blank" href="http://www.gosuslugi.ru">
+                                    <img title="Гос услуги" src="/public/img/bnr_gosuslugiru_200x200.png" alt="">
+                                </a>
+                                                            <a title="Министерство просвещения Российской Федерации" class="partner" target="_blank" href="https://edu.gov.ru/">
+                                    <img title="Министерство просвещения Российской Федерации" src="/public/img/мин прос.png" alt="">
+                                </a>
+                                                    </div>
+                                            <div class="slide-partners">
+                                                            <a title="Фонд поддержки детей, находящихся в трудной жизненной ситуации" class="partner" target="_blank" href="https://fond-detyam.ru/reklamno-informatsionnye-materialy-ob-otvetstvennom-roditelstve/">
+                                    <img title="Фонд поддержки детей, находящихся в трудной жизненной ситуации" src="/public/img/fond_deti.jpg" alt="">
+                                </a>
+                                                            <a title="Методическое объединение преподавателей колледжа" class="partner" target="_blank" href="https://moksei.ucoz.ru/">
+                                    <img title="Методическое объединение преподавателей колледжа" src="/public/img/moksei2.png" alt="">
+                                </a>
+                                                            <a title="Интернет олимпиады" class="partner" target="_blank" href="https://i-exam.ru/">
+                                    <img title="Интернет олимпиады" src="/public/img/https://sun9-22.userapi.com/impg/xhaNCWLFQKXAb3miQioUlaulqTZzRFaE1WcPXw/SsVEENRoTv8.jpg?size=700x683&quality=96&sign=95c7ae8dcd12000d893f5191e77d2326&type=album" alt="">
+                                </a>
+                                                            <a title="" class="partner" target="_blank" href="">
+                                    <img title="" src="/public/img/" alt="">
+                                </a>
+                                                            <a title="" class="partner" target="_blank" href="">
+                                    <img title="" src="/public/img/" alt="">
+                                </a>
+                                                            <a title="" class="partner" target="_blank" href="">
+                                    <img title="" src="/public/img/" alt="">
+                                </a>
+                                                    </div>
+                                    </div>
+                                    <div class="partner-arrow fas fa-chevron-right right-partner" style=""></div>
+                    <div class="partner-arrow fas fa-chevron-left  left-partner" style=""></div>
+                            </div>
+			
+			<div class="ria56 mt-4" style="position:relative;">
+				<script type="text/javascript" src="https://ria56.ru/banners_subscribe/digistrnet.js"></script>
+				<script type="text/javascript">
+					var bn = {width: 270, height: 270}
+					_digistrNET.showProducts(bn);
+				</script>
+                <br>
+                <a href="https://oksei.ru//page/zaschita_personalnyh_dannyh" target="_blank"><img src="/files/1_7505.jpg" alt="image" width="270px"></a>
+                <br>
+                <a href="page/rekomendacii_naseleniyu_pri_pozhare"><img src="https://sun9-24.userapi.com/c858320/v858320117/1f4ec4/jGD4R_ZQRQ8.jpg" width="270px" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.main-slider').slick({
+        nextArrow:$('.next'),
+        prevArrow:$('.prev'),
+        dots: true,
+    });
+    $('.slider-partners').slick({
+        nextArrow:$('.right-partner'),
+        prevArrow:$('.left-partner'),
+        autoplay: true
+    });
+</script>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-contact col-md-3" style="margin-top: 30px;">
+                <p class="footer-adress">
+                    ул. Чкалова, 11, Оренбург, Оренбургская обл., 460001
+                </p>
+                <p>
+                    <span><i class="fas fa-mobile"></i> +7 (3532) 31-72-39</span> <br>
+                    <span><i class="fas fa-envelope"></i> spo08@mail.orb.ru</span><br>
+                    <span><i class="fas fa-mobile"></i> +7 (3532) 31-16-26</span> <br>
+	<span><i class="fas fa-envelope"></i> pk@oksei.ru - приёмная комиссия</span><br><br>
+                    <span><a href="/send_msg" style="color: #fff; text-decoration: underline">Обратная связь</a></span>
+                </p>
+            </div>
+            <div class="footer-links col-md-3">
+                <p class="footer-links_title">Абитуриенту</p>
+                <ul class="footer-menu">
+                    <li class="footer_list"><a href="/abiturientu/pravila_priema" class="footer_href" title=Правила приёма><span class="menu-title">Правила приёма</span></a></li><li class="footer_list"><a href="/abiturientu/prijom_po_spetsialnostyam" class="footer_href" title=Приём по специальностям в 2022 году><span class="menu-title">Приём по специальностям в 2022 году</span></a></li><li class="footer_list"><a href="/abiturientu/perechen_spetsialnostei" class="footer_href" title=Общая характеристика специальностей><span class="menu-title">Общая характеристика специальностей</span></a></li><li class="footer_list"><a href="/abiturientu/regim_raboti" class="footer_href" title=Приёмная комиссия><span class="menu-title">Приёмная комиссия</span></a></li><li class="footer_list"><a href="/abiturientu/kollichestvo_podannih_zayavleniy" class="footer_href" title=Количество поданных заявлений / Приказ о зачислении первокурсников 2022 года><span class="menu-title">Количество поданных заявлений / Приказ о зачислении первокурсников 2022 года</span></a></li><li class="footer_list"><a href="/abiturientu/pou_dogovor" class="footer_href" title=Условия приема на обучение по договорам об оказании платных образовательных услуг><span class="menu-title">Условия приема на обучение по договорам об оказании платных образовательных услуг</span></a></li><li class="footer_list"><a href="/page/vstupitelnye_ispytaniya" class="footer_href" title=Вступительные испытания><span class="menu-title">Вступительные испытания</span></a></li><li class="footer_list"><a href="/page/osobennosti_provedeniya_vstupitelnyh_ispytaniy__dlya_invalidov_i_lic_s_ovz" class="footer_href" title=Особенности проведения вступительных испытаний  для инвалидов и лиц с ОВЗ><span class="menu-title">Особенности проведения вступительных испытаний  для инвалидов и лиц с ОВЗ</span></a></li><li class="footer_list"><a href="/abiturientu/ob_obschezhitii" class="footer_href" title=Об общежитии><span class="menu-title">Об общежитии</span></a></li><li class="footer_list"><a href="/abiturientu/help_abiturient" class="footer_href" title=Ответы на вопросы по приёму><span class="menu-title">Ответы на вопросы по приёму</span></a></li><li class="footer_list"><a href="/page/proekty_i_dpo" class="footer_href" title=Интересные проекты и дополнительные образовательные программы><span class="menu-title">Интересные проекты и дополнительные образовательные программы</span></a></li><li class="footer_list"><a href="https://youtu.be/FYSB-mVIpG4" class="footer_href" title=Виртуальная экскурсия по рубрике Абитуриенту><span class="menu-title">Виртуальная экскурсия по рубрике Абитуриенту</span></a></li>                </ul>
+            </div>
+            <div class="footer-links col-md-3">
+                <p class="footer-links_title">Образовательные сайты</p>
+                <ul class="footer-menu">
+                    <li class="footer_list"><a href=//минобрнауки.рф class="footer_href" title=Официальный сайт Министерства образования и науки РФ><span class="menu-title">Официальный сайт Министерства образования и науки РФ</span></a></li><li class="footer_list"><a href=//www.edu.ru/ class="footer_href" title=Федеральный портал Российское образование><span class="menu-title">Федеральный портал Российское образование</span></a></li><li class="footer_list"><a href=//window.edu.ru/ class="footer_href" title=Информационная система Единое окно доступа к образовательным ресурсам><span class="menu-title">Информационная система Единое окно доступа к образовательным ресурсам</span></a></li><li class="footer_list"><a href=//school-collection.edu.ru/ class="footer_href" title=Единая коллекция цифровых образовательных ресурсов><span class="menu-title">Единая коллекция цифровых образовательных ресурсов</span></a></li><li class="footer_list"><a href=//fcior.edu.ru/ class="footer_href" title=Федеральный центр информационно-образовательных ресурсов><span class="menu-title">Федеральный центр информационно-образовательных ресурсов</span></a></li><li class="footer_list"><a href=//об-образовании.рф class="footer_href" title=Образование России: новое правовое регулирование><span class="menu-title">Образование России: новое правовое регулирование</span></a></li><li class="footer_list"><a href=http://rusregioninform.ru/obrazovanie class="footer_href" title=РусРегионИнформ: Образование><span class="menu-title">РусРегионИнформ: Образование</span></a></li>                </ul>
+            </div>
+            <div class="footer-links col-md-3">
+                <p class="footer-links_title">Студенту</p>
+                <ul class="footer-menu">
+                    <li class="footer_list"><a href="/studentu/raspisanie_uchebnykh_zanyatij" class="footer_href" title=Расписание учебных занятий><span class="menu-title">Расписание учебных занятий</span></a></li><li class="footer_list"><a href="/studentu/obratnaya_svyaz" class="footer_href" title=Заказ справок on-line><span class="menu-title">Заказ справок on-line</span></a></li><li class="footer_list"><a href="/studentu/proizvodstvennaya_praktika" class="footer_href" title=Производственная практика><span class="menu-title">Производственная практика</span></a></li><li class="footer_list"><a href="/page/obscheobrazovatelnyy_process" class="footer_href" title=Общеобразовательный цикл><span class="menu-title">Общеобразовательный цикл</span></a></li><li class="footer_list"><a href="/files/Pamyatka_stud_brs_.docx" class="footer_href" title=Памятка студенту по БРС><span class="menu-title">Памятка студенту по БРС</span></a></li><li class="footer_list"><a href="/page/telefony_doveriya" class="footer_href" title=Телефон доверия><span class="menu-title">Телефон доверия</span></a></li>                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="under_footer-links container">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/page/kontakty">Контакты</a></li>
+            <li><a href="/abiturientu">Абитуриенту</a></li>
+            <li><a href="/studentu">Студенту</a></li>
+            <li><a href="/education_sites">Образовательные сайты</a></li>
+            <li><a href="/page/gia_v_forme_demonstracionnogo_ekzamena">ГИА в форме демонстрационного экзамена</a></li>
+        </ul>
+        <p>© 2009-<span id="footer_year_now"></span>
+            <script>document.getElementById('footer_year_now').innerHTML = new Date().getFullYear()</script>. Официальный сайт Государственного автономного профессионального образовательного учреждения "Оренбургский колледж экономики и информатики"</p>
+        
+            </div>
+</footer>
+<div class="alert-test-sayt" id="alert-test-sayt" style="display: none">
+    <div class="text-test-sayt">Сайт находится в тестовом режиме, приносим извинения за предоставленные неудобства.</div>
+    <div class="close-test-sayt" onclick="$('#alert-test-sayt').hide()"></div>
+</div>
+<style>
+    .close-test-sayt:before {
+        content: 'x';
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-top: -3px;
+        margin-left: -1px;
+    }
+    .close-test-sayt {
+        margin-left: 50px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    .alert-test-sayt {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: rgb(0, 86, 157);
+        color: #fff;
+        display: flex;
+        text-align: center;
+        padding: 20px 35px;
+        justify-content: center;
+    }
+</style>
+<link rel="stylesheet" href="/public/styles/media.css">
+<script>
+    $('.open_menu>svg').click(function () {
+        $('body').toggleClass('hidden');
+        $('.header-menu').toggleClass('openMenu');
+    });
+    $('.menu_items-list > li').click(function () {
+        if ($(window).width() <= 991) {
+            $(this).find("ul").animate({height: "toggle", opacity: "toggle"}, "fast");
+
+        }
+    });
+    $(".table").parent().css({overflow:'auto'});
+    // $(window).scroll(function () {
+    //     if($( window ).width() <= 991) {
+    //         console.log('scrol');
+    //     }
+    //
+    // })
+</script>
+<script src="/public/vendor/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" href="/public/vendor/swipebox-master/src/css/swipebox.min.css">
+<script src="/public/vendor/swipebox-master/src/js/jquery.swipebox.min.js"></script>
+<script>
+    ;( function( $ ) {
+
+        $( '.swipebox' ).swipebox({
+            hideCloseButtonOnMobile : true, // true will hide the close button on mobile devices
+            removeBarsOnMobile : false,
+            loopAtEnd: true
+        });
+
+    } )( jQuery );
+    
+
+</script>
+</body>
+</html>
