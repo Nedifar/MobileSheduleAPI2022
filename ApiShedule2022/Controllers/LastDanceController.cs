@@ -221,12 +221,13 @@ namespace ApiShedule2022.Controllers
             DateTime dateIZM = DateTime.Today;
             int dayWeek = (int)DateTime.Today.DayOfWeek;
             var worksheet = _workbook1.Worksheets.First();
-            for (int i = 1; i <= worksheet.ColumnsUsed().Count(); i++)
+            int columnsCount = worksheet.ColumnsUsed().Count();
+            int rowsCount = worksheet.ColumnsUsed().Count();
+            for (int i = 1; i <= columnsCount; i++)
             {
-                int n = worksheet.RowsUsed().Count();
-                for (int j = 11; j <= worksheet.RowsUsed().Count() + 10; j++)
+                for (int j = 11; j <= rowsCount + 10; j++)
                 {
-                    for (int l = 3; l <= ix.ColumnsUsed().Count(); l++)
+                    for (int l = 3; l <= columnsCount; l++)
                     {
                         if (ix.Cell(5, l).GetValue<string>() == worksheet.Cell(j, i).GetValue<string>())
                         {
@@ -287,12 +288,13 @@ namespace ApiShedule2022.Controllers
         {
             var fullShed = (IXLWorksheet)cache.Get("xLMain");
             int actualRow = (int)DateTime.UtcNow.AddHours(5).DayOfWeek*6+numberPara-1;
+            int columnsCount = fullShed.ColumnsUsed().Count();
             var cabinets = (List<string>)cache.Get("MainListCabinets");
             var emptyCabinetsNow = new List<string>();
             foreach (var cabinet in cabinets)
             {
                 bool cont = false;
-                for (int i = 3; i <= fullShed.ColumnsUsed().Count(); i++)
+                for (int i = 3; i <= columnsCount; i++)
                 {
                     var cell = fullShed.Cell(actualRow, i).GetValue<string>().Trim();
                     if (cell.Contains(cabinet))

@@ -344,7 +344,8 @@ namespace ApiShedule2022.Models
 
         public static int IndexGroup(string group, IXLWorksheet ix)
         {
-            for (int i = 1; i < ix.ColumnCount(); i++)
+            int columnsCount = ix.ColumnsUsed().Count();
+            for (int i = 1; i < columnsCount; i++)
             {
                 if (ix.Cell(5, i).GetValue<string>() == group)
                 {
@@ -358,12 +359,13 @@ namespace ApiShedule2022.Models
 
         public static List<DayWeekClass> raspisaniekab(int row, string kabinet, IXLWorksheet ix) //Метод для возвращения расписания по кабинетам из xlsx
         {
+            int columnsCount = ix.ColumnsUsed().Count();
             bool exit = false;
             int number = 1;
             List<DayWeekClass> kabinets = new List<DayWeekClass>();
             for (int i = row; i < row + 6; i++)
             {
-                for (int j = 3; j <= ix.ColumnsUsed().Count(); j++)
+                for (int j = 3; j <= columnsCount; j++)
                 {
                     string result = ix.Cell(i, j).GetValue<string>();
                     if (result.Contains(kabinet))
@@ -382,45 +384,15 @@ namespace ApiShedule2022.Models
             return kabinets;
         }
 
-        //public static List<List<DayWeekClass>> raspisanieabInFloor(int row, List<string> kabinetsFloor) //Метод для возвращения расписания по кабинетам отдельных этажей из xlsx
-        //{
-        //    List<List<DayWeekClass>> floorCabinets = new List<List<DayWeekClass>>();
-        //    foreach (var kabinet in kabinetsFloor)
-        //    {
-        //        bool exit = false;
-        //        int number = 1;
-        //        List<DayWeekClass> kabinets = new List<DayWeekClass>();
-        //        for (int i = row; i < row + 6; i++)
-        //        {
-        //            for (int j = 3; j <= workSheet.ColumnsUsed().Count(); j++)
-        //            {
-        //                string result = workSheet.Cell(i, j).GetValue<string>();
-        //                if (result.Contains(kabinet))
-        //                {
-        //                    kabinets.Add(new DayWeekClass { Number = number, Day = result + $"\n{workSheet.Cell(5, j).GetValue<string>()}" });
-        //                    exit = false;
-        //                    break;
-        //                }
-        //                else
-        //                    exit = true;
-        //            }
-        //            if (exit)
-        //                kabinets.Add(new DayWeekClass { Number = number, Day = "-" });
-        //            number++;
-        //        }
-        //        floorCabinets.Add(kabinets);
-        //    }
-        //    return floorCabinets;
-        //}
-
         public static List<DayWeekClass> raspisanieteach(int row, string teach, IXLWorksheet ix) //Метод для возвращения расписания по преподавтелям из xlsx
         {
+            int columnsCount = ix.ColumnsUsed().Count();
             bool exit = false;
             int number = 1;
             List<DayWeekClass> kabinets = new List<DayWeekClass>();
             for (int i = row; i < row + 6; i++)
             {
-                for (int j = 3; j <= ix.ColumnsUsed().Count(); j++)
+                for (int j = 3; j <= columnsCount; j++)
                 {
                     string result = ix.Cell(i, j).GetValue<string>();
                     if (result.Contains(teach))
@@ -437,27 +409,6 @@ namespace ApiShedule2022.Models
                 number++;
             }
             return kabinets;
-        }
-
-        public static bool AvailabilityCheck(string url)
-        {
-            var request = WebRequest.Create(url);
-            request.Timeout = 1200;
-            request.Method = "HEAD";
-            HttpWebResponse response = null;
-            try
-            {
-                response = (HttpWebResponse)request.GetResponse();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-            finally
-            {
-                response?.Close();
-            }
         }
     }
 }

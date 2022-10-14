@@ -67,11 +67,13 @@ namespace ApiShedule2022.HostedServices
                     cache.Set("xLMain", workSheet, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5) });
                     await Task.Run(() =>
                     {
+                        int columnsCount = workSheet.ColumnsUsed().Count();
+                        int rowsCount = workSheet.ColumnsUsed().Count();
                         bool exit = true;
                         List<string> dataforcb = new List<string>();
-                        for (int i = 3; i <= workSheet.ColumnsUsed().Count(); i++)
+                        for (int i = 3; i <= columnsCount; i++)
                         {
-                            for (int j = 6; j <= workSheet.RowsUsed().Count(); j++)
+                            for (int j = 6; j <= rowsCount; j++)
                             {
                                 string result = workSheet.Cell(j, i).GetValue<string>();
                                 if (result != "" && result != " " && result.Length > 3)
@@ -105,11 +107,13 @@ namespace ApiShedule2022.HostedServices
                     }); //список кабинетов
                     await Task.Run(() => 
                     {
+                        int columnsCount = workSheet.ColumnsUsed().Count();
+                        int rowsCount = workSheet.ColumnsUsed().Count();
                         bool exit = true;
                         List<string> dataforcb = new List<string>();
-                        for (int i = 3; i <= workSheet.ColumnsUsed().Count(); i++)
+                        for (int i = 3; i <= columnsCount; i++)
                         {
-                            for (int j = 6; j <= workSheet.RowsUsed().Count(); j++)
+                            for (int j = 6; j <= rowsCount; j++)
                             {
                                 string result = workSheet.Cell(j, i).GetValue<string>();
                                 if (result != "" && result != " " && result.Length > 3)
@@ -163,8 +167,9 @@ namespace ApiShedule2022.HostedServices
                     });
                     await Task.Run(() =>
                     {
+                        int columnsCount = workSheet.ColumnsUsed().Count();
                         List<string> dataforcb = new List<string>();
-                        for (int i = 3; i <= workSheet.ColumnsUsed().Count(); i++)
+                        for (int i = 3; i <= columnsCount; i++)
                         {
                             dataforcb.Add(workSheet.Cell(5, i).GetValue<string>());
                         }
