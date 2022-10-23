@@ -221,13 +221,12 @@ namespace ApiShedule2022.Controllers
             DateTime dateIZM = DateTime.Today;
             int dayWeek = (int)DateTime.Today.DayOfWeek;
             var worksheet = _workbook1.Worksheets.First();
-            int columnsCount = worksheet.ColumnsUsed().Count();
-            int rowsCount = worksheet.ColumnsUsed().Count();
-            for (int i = 1; i <= columnsCount; i++)
+            for (int i = 1; i <= worksheet.ColumnsUsed().Count(); i++)
             {
-                for (int j = 11; j <= rowsCount + 10; j++)
+                int n = worksheet.RowsUsed().Count();
+                for (int j = 11; j <= worksheet.RowsUsed().Count() + 10; j++)
                 {
-                    for (int l = 3; l <= columnsCount; l++)
+                    for (int l = 3; l <= ix.ColumnsUsed().Count(); l++)
                     {
                         if (ix.Cell(5, l).GetValue<string>() == worksheet.Cell(j, i).GetValue<string>())
                         {

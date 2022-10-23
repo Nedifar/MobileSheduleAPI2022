@@ -86,7 +86,6 @@ C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\bin\Debug\net5.0\Syste
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\bin\Debug\net5.0\System.IO.Packaging.dll
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
-C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.csproj.AssemblyReference.cache
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.AssemblyInfoInputs.cache
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.AssemblyInfo.cs

@@ -23,42 +23,52 @@ namespace ApiShedule2022.HostedServices
         {
             _serviceScopeFactory = serviceScopeFactory;
             var scope = serviceScopeFactory.CreateScope();
-            
+
             this.cache = cache;
         }
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while(!stoppingToken.IsCancellationRequested)
+            while (!stoppingToken.IsCancellationRequested)
             {
                 try
                 {
                     DateTime time = DateTime.UtcNow.AddHours(5);
                     Differents dif = new Differents();
                     dif.DateOut(time);
-                    XLWorkbook xL=null;
+                    XLWorkbook xL = null;
                     string trim1 = dif.upMonth.Substring(0, 3);
                     HtmlDocument doc = new HtmlDocument();
                     var web1 = new HtmlWeb();
                     doc = web1.Load("https://oksei.ru/studentu/raspisanie_uchebnykh_zanyatij");
-                    var node = doc.DocumentNode.SelectSingleNode("//*[@class='container bg-white p-25 box-shadow-right radius']/p/a");
-                    var href = node.Attributes["href"].Value;
-                    var value = node.InnerText;
-                    if (System.IO.File.Exists(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{trim1}.xlsx"))
+
+                    if (File.Exists(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{trim1}.xlsx"))
                     {
                         xL = new XLWorkbook(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{trim1}.xlsx");
-                        
                     }
                     else
                     {
                         WebClient web = new WebClient();
-                        web.DownloadFile($"https://oksei.ru{href}", $"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.DdownDay.Day}_{dif.DupDay.Day}_{dif.upMonth.Substring(0, 3)}.xls");
-                        var workbook = new Aspose.Cells.Workbook(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{dif.upMonth.Substring(0, 3)}.xls");
-                        workbook.Save(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{dif.upMonth.Substring(0, 3)}.xlsx", Aspose.Cells.SaveFormat.Xlsx);
-                        xL = new XLWorkbook(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{dif.upMonth.Substring(0, 3)}.xlsx");
-                        using (var stream = new StreamWriter($"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/Formats.txt", false))
+
+                        var nodes = doc.DocumentNode.SelectNodes("//*[@class='container bg-white p-25 box-shadow-right radius mt50']/div/div/p/a");
+                        foreach (var node in nodes.Reverse())
                         {
-                            stream.Write(value);
-                            stream.Close();
+                            if (node.InnerText.Contains("верх") || node.InnerText.Contains("нижн"))
+                            {
+
+                                var href = node.Attributes["href"].Value;
+                                var value = node.InnerText;
+                                web.DownloadFile($"https://oksei.ru{href}", $"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.DdownDay.Day}_{dif.DupDay.Day}_{dif.upMonth.Substring(0, 3)}.xls");
+                                var workbook = new Aspose.Cells.Workbook(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{dif.upMonth.Substring(0, 3)}.xls");
+                                workbook.Save(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{dif.upMonth.Substring(0, 3)}.xlsx", Aspose.Cells.SaveFormat.Xlsx);
+                                xL = new XLWorkbook(@$"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/_{dif.downDay}_{dif.upDay}_{dif.upMonth.Substring(0, 3)}.xlsx");
+                                cache.Set("xLMain", xL.Worksheets.First(), new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5) });
+                                using (var streame = new StreamWriter($"{AppDomain.CurrentDomain.BaseDirectory}Raspisanie/Formats.txt", false))
+                                {
+                                    streame.Write(value);
+                                    streame.Close();
+                                }
+                                break;
+                            }
                         }
                     }
                     IXLWorksheet workSheet = xL.Worksheets.First();
@@ -105,7 +115,7 @@ namespace ApiShedule2022.HostedServices
                         dataforcb.Sort();
                         cache.Set("MainListCabinets", dataforcb, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5) });
                     }); //список кабинетов
-                    await Task.Run(() => 
+                    await Task.Run(() =>
                     {
                         int columnsCount = workSheet.ColumnsUsed().Count();
                         int rowsCount = workSheet.ColumnsUsed().Count();
@@ -177,11 +187,11 @@ namespace ApiShedule2022.HostedServices
                         cache.Set("MainListGroups", dataforcb, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5) });
                     });
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
 
                 }
-                await Task.Delay(1000*60*5);
+                await Task.Delay(1000 * 60 * 5);
             }
         }
     }
