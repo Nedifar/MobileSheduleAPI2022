@@ -100,3 +100,4 @@ C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiSh
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ref\ApiShedule2022.dll
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.pdb
 C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.genruntimeconfig.cache
+C:\Users\Ilnaz\source\repos\ApiShedule2022\ApiShedule2022\obj\Debug\net5.0\ApiShedule2022.csproj.AssemblyReference.cache
